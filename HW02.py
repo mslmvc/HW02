@@ -77,7 +77,7 @@ Parameters: budget (float), diningOption (str), backup (str)
 Returns: decision (str)
 """
 def backupRestaurant(budget, diningOption, backup):
-    prefer_restaurant=getDinner()
+    prefer_restaurant=getDinner(budget,diningOption)
     if prefer_restaurant == "Chick Fil A" or prefer_restaurant=="Umma's" or prefer_restaurant=="Gypsy Kitchen" or prefer_restaurant=="Flip Burger":
         return "Yay, you can get dinner at your first choice, {}.".format(prefer_restaurant)
     else:
